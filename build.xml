@@ -1,0 +1,16 @@
+<project name="SampleBuild" default="compile" basedir=".">
+	<path id="compile.classpath">
+		<fileset dir=".">
+			<include name=".jar"/>
+		</fileset>
+	</path>	
+	<target name="init">
+		<mkdir dir="build/classes"/>
+		
+	</target>	
+	<target name="compile" depends="init">
+		<javac srcdir="." debug="true" destdir="build/classes">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>
+</project>	
