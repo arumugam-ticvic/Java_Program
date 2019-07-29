@@ -18,9 +18,7 @@
 			<fileset dir="Reports"/>
 			<lib dir="Reports"/>
 			<classes dir = "build/classes"/>
-			<manifest file="MANIFEST">
-				<attribute name="Built-By" value="Helloprogram"/>
-			</manifest>
+			
 		</war>
 	</target>
 	
